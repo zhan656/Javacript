@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Films &amp; for Loops</title>
+</head>
+<body>
+    <script type="text/javascript">
+      // Array of movie scores
+      var movieScore = [4.4, 3.3, 5.9, 8.8, 1.2, 5.2, 7.4, 7.5, 7.2, 9.7, 4.2, 6.9];
+  
+      // Arrays to hold movie scores
+      var goodMovies = [];
+      var okMovies = [];   
+      var badMovies = [];
+      for (var i in movieScore){
+        if (movieScore[i] >= 7.0) {
+            goodMovies.push(movieScore[i]);
+        }
+        else if (movieScore[i] >= 5.0) {
+            okMovies.push(movieScore[i]);
+        }
+        else {
+            badMovies.push(movieScore[i]);
+        }
+      }
+      
+      console.log(goodMovies)
+      /*
+      var all = [goodMovies,okMovies,badMovies]
+      console.log ('goodMovies: \n')
+      for (var i in all){
+        for (var j = 0; j < i.length; j++) {
+            console.log(i[j]);
+        }
+      }*/
+      // YOUR CODE HERE
+    </script>
+</body>
+</html>

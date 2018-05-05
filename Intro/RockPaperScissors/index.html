@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock! Paper! Scissors!</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Randomly select the computers choice
+        var computerSelections = ["r", "p", "s"];
+        var computerChoice = computerSelections[Math.round(Math.random()*2)];
+            console.log('-------------\n' + 'computerChoice: ' + computerChoice);
+        var input = prompt("Please choose 'r', 'p' or 's': "); 
+            console.log(input);
+        alert ("The you have chosen: " + input);
+        
+        // 'Tie' condition
+        if (input === computerChoice){
+            console.log("Tie");
+        }
+        
+        // 'win' conditions 
+        else if ((input === 'r' && computerChoice === 's') || 
+                 (input === 's' && computerChoice === 'p') || 
+                 (input === 'p' && computerChoice === 'r')){
+            console.log("You win!");
+        }
+        
+        // all other 'lose' conditions 
+        else{
+            console.log("You lose!");
+        }
+        
+    </script>
+</body>
+</html>
