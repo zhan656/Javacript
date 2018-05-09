@@ -8,6 +8,6 @@ clickHere.addEventListener("click", function show_color() {
     //Fcolor.push(Fcolor);
     color = document.querySelector("#color");
     // var todoList = document.querySelector("#todo-list");
-    var todoHTML = "<li style = 'color : ${Fcolor}>'"+ "Your Favorite Color is: " + Fcolor +"</li>";
+    var todoHTML = "<li>"+ "Your Favorite Color is: " + Fcolor.repeat(2)+"</li>";
     color.innerHTML = todoHTML;
 });
