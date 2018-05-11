@@ -9,6 +9,7 @@ var $non_priorityList = document.querySelector("#non-priority");
 $submitBtn.addEventListener("click", handleSubmitClick);
 
 function handleSubmitClick(event) {
+  console.log("botton work ok")
   // The default behavior of a button clicked inside of a form is to try to submit the form somewhere (which we don't want)
   event.preventDefault();
 
@@ -16,7 +17,7 @@ function handleSubmitClick(event) {
   var order = {
     name: $nameInput.value.trim(),
     item: $itemInput.value.trim(),
-    perishable: $perishableInput.value.strim()
+    perishable: $perishableInput.value.trim()
     
   };
 
